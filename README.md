@@ -46,6 +46,9 @@ Log Bayes factors for various galaxy properties in our study $$\(c = 1, m = 8\)$
 | **VoidFinder** | -3896        | -3847 | -3608 | -2901     | -895  | -3247 |
 | **V²**         | -280         | 123   | 80    | -547      | -58   | 161   |
 
+Using 𝐕², we observe little differences between the properties of void and wall galaxies, particularly regarding color distributions (g-r, u-r) and specific star formation rates sSFR. 
+
+Conversely, the 𝐕𝐨𝐢𝐝𝐅𝐢𝐧𝐝𝐞𝐫 catalog shows that the property distributions of void galaxies are significantly different from those in denser regions. 
 
 ## Tools We Use
 
