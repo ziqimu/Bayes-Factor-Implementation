@@ -1,11 +1,11 @@
 ### Abstract
-We utilize the Polya tree method to implement a nonparametric Bayesian test. This approach allows us to compare galaxy properties between dense regions (voids) and less dense regions (walls) identified by two void-detection algorithms, VoidFinder and V², using data from the SDSS catalog and the DESI DR1 catalog.
+I utilize the Polya tree method to implement a nonparametric Bayesian test. This approach allows us to compare galaxy properties between dense regions (voids) and less dense regions (walls) identified by two void-detection algorithms, VoidFinder and V², using data from the SDSS catalog and the DESI DR1 catalog.
 
 ## Background
-Galaxies in the universe are distributed in a web-like structure and they are constantly being influenced by their surroundings. We are especially interested in studying the properties of galaxies in different regions of the sky: in dense regions (“walls”) where galaxies interact, causing accelerated evolution; and in sparse regions (“voids”), where galaxies evolve in relative isolation and are observed to have delayed evolution. Studying galaxies in these populations provides critical hints about the processes that drive their evolution. 
+Galaxies in the universe are distributed in a web-like structure and they are constantly being influenced by their surroundings. I'm especially interested in studying the properties of galaxies in different regions of the sky: in dense regions (“walls”) where galaxies interact, causing accelerated evolution; and in sparse regions (“voids”), where galaxies evolve in relative isolation and are observed to have delayed evolution. Studying galaxies in these populations provides critical hints about the processes that drive their evolution. 
 
 ## Nonparametric Bayesian Method
-We consider a robust quantity, the Bayes factor, which takes into account both the null hypothesis H0 (single parent) and the alternative hypothesis H1 (two parent). Given data D, the Bayes Factor is the ratio of the marginal likelihoods of D given each hypothesis, and measures the strength of the evidence against the null hypothesis. 
+I consider a robust quantity, the Bayes factor, which takes into account both the null hypothesis H0 (single parent) and the alternative hypothesis H1 (two-parent). Given data D, the Bayes Factor is the ratio of the marginal likelihoods of D given each hypothesis and measures the strength of the evidence against the null hypothesis. 
 
 $$ B_{01} = \frac{\Pr(\mathbf{D} \mid H_0)}{\Pr(\mathbf{D} \mid H_1)}. $$
 
@@ -21,16 +21,16 @@ I aim to apply the non-parametric two-sample Bayesian test in this project. Pól
 
 Pólya tree prior parameters:
 
-𝞱:  probability of turning left.  𝞱 ~ 𝑩𝒆𝒕𝒂(𝞪₀, 𝞪₁), where 𝑩𝒆𝒕𝒂(𝞪₀, 𝞪₁) = Γ(𝞪₀) Γ(𝞪₁) / Γ(𝞪₀ + 𝞪₁)
+𝞱: the probability of turning left.  𝞱 ~ 𝑩𝒆𝒕𝒂(𝞪₀, 𝞪₁), where 𝑩𝒆𝒕𝒂(𝞪₀, 𝞪₁) = Γ(𝞪₀) Γ(𝞪₁) / Γ(𝞪₀ + 𝞪₁)
 
-𝞪:  constant at level 𝞪₀ = 𝞪₁ = 𝒄𝒎²
+𝞪: constant at level 𝞪₀ = 𝞪₁ = 𝒄𝒎²
 
 𝒎: depth of the tree
 
 𝒄:  free variable, ideally between 1 and 10. A larger 𝒄 reduces variance, forcing distributions more similar
 
 ## Getting the Dataset
-We use the SDSS NSA (NASA-Sloan Atlas) catalog and a version of the DESU DR1 catalog called the FastSpecFit Iron VAC. 
+I use the SDSS NSA (NASA-Sloan Atlas) catalog and a version of the DESU DR1 catalog called the FastSpecFit Iron VAC. 
 
 [Description of NSA](http://www.nsatlas.org/data)
 
@@ -46,11 +46,11 @@ Log Bayes factors for various galaxy properties in our study $$\(c = 1, m = 8\)$
 | **VoidFinder** | -3896        | -3847 | -3608 | -2901     | -895  | -3247 |
 | **V²**         | -280         | 123   | 80    | -547      | -58   | 161   |
 
-Using 𝐕², we observe little differences between the properties of void and wall galaxies, particularly regarding color distributions (g-r, u-r) and specific star formation rates sSFR. 
+Using 𝐕², I observe little differences between the properties of void and wall galaxies, particularly regarding color distributions (g-r, u-r) and specific star formation rates sSFR. 
 
 Conversely, the 𝐕𝐨𝐢𝐝𝐅𝐢𝐧𝐝𝐞𝐫 catalog shows that the property distributions of void galaxies are significantly different from those in denser regions. 
 
-## Tools We Use
+## Tools I Use
 
 <div>
   <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original-wordmark.svg" title="Python" alt="Python" width="40" height="40"/>&nbsp;
