@@ -39,7 +39,7 @@ I use the SDSS NSA (NASA-Sloan Atlas) catalog and a version of the DESU DR1 cata
 Access FastSpefit through NERSC: `/global/cfs/cdirs/desi/public/dr1/vac/dr1/fastspecfit/iron/v2.1`
 
 ## Conclusion
-Log Bayes factors for various galaxy properties in our study $$\(c = 1, m = 8\)$$
+Log Bayes factors for various galaxy properties in my study $$\(c = 1, m = 8\)$$
 
 |                | Stellar Mass | g-r   | u-r   | Magnitude | SFR   | sSFR  |
 |----------------|--------------|-------|-------|-----------|-------|-------|
